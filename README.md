@@ -21,9 +21,10 @@ With a great mastery of popular PHP frameworks such as Symfony, Zend Framework, 
 Thus CMS Content Management Systems such as WordPress, PrestaShop, OpenCart.
 
 Languages:
-+ JavaScript
-+ PHP
-+ C#
+
+<a href="https://php.net/" style="color=#474A8A;">
+  <img src="./icons/php.svg" width="10%"/>
+</a>
 
 Frameworks:  
 + Symfony
