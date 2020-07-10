@@ -23,10 +23,10 @@ Thus CMS Content Management Systems such as WordPress, PrestaShop, OpenCart.
 Languages:
 -
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" style="color=#F0DB4F;" title="JavaScript" target="_blank">
-  <img src="icons/javascript.svg" width="10%"/>
+  <img src="https://github.com/5baddi/5baddi/icons/javascript.svg" width="10%"/>
 </a>
 <a href="https://php.net/" style="color=#474A8A;" title="PHP" target="_blank">
-  <img src="icons/php.svg" width="10%"/>
+  <img src="https://github.com/5baddi/5baddi/icons/php.svg" width="10%"/>
 </a>
 
 Frameworks: 
