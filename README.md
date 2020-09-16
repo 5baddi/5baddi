@@ -1,3 +1,5 @@
+<img src="assets/img/screenshot.png" alt="Portfolio" style="width:100%;"/>
+
 ### 👋 Hi, i'm BADDI Mohamed
 
 <!--
