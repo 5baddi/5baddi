@@ -16,7 +16,7 @@ a{
     }
 }
 body{
-    background-color: $light-color;
+    background-color: white;
     
     header{
         display: block;
@@ -76,6 +76,14 @@ body{
                     color: white !important;
                 }
             }
+        }
+    }
+
+    article{
+        padding: 16px 8px;
+        
+        #services{
+            text-align: center;
         }
     }
 
