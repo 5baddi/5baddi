@@ -1,4 +1,6 @@
-<img src="assets/img/screenshot.png" alt="Portfolio" style="width:100%;"/>
+<a href="https://baddi.info" title="Portfolio" target="_blank">
+  <img src="assets/img/screenshot.png" alt="Portfolio" style="width:100%;"/>
+</a>
 
 ### 👋 Hi, i'm BADDI Mohamed
 
