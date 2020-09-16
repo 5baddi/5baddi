@@ -1,0 +1,84 @@
+$main-color: #4B2D87;
+$second-color: #FFCA28;
+$light-color: #E1BEE7;
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@700&family=Source+Sans+Pro&display=swap');
+
+html, body{
+    height: 100%;
+}
+a{
+    color: $second-color !important;
+
+    &:hover{
+        text-decoration: none;
+        opacity: .7;
+    }
+}
+body{
+    background-color: $light-color;
+    
+    header{
+        .overlay{
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-image: url('../img/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            &:after{
+                content: "";
+                height: 100vh;
+                width: 100%;
+                display: block;
+                background-color: $main-color;
+                opacity: .7;
+            }
+        }
+
+        .hero{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+            color: white;
+
+            img{
+                width: 200px;
+                height: auto;
+                overflow: hidden;
+                border: 9px solid rgba(0, 0, 0, .2);
+                margin-bottom: 16px;
+            }
+
+            h1{
+                font-family: 'Chivo', sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+                font-size: 32pt;
+            }
+
+            p{
+                font-family: 'Source Sans Pro', sans-serif;
+                font-weight: 400;
+
+                a{
+                    color: white !important;
+                }
+            }
+        }
+    }
+
+    footer{
+        padding: 15px 0;
+        background-color: $main-color;
+        font-size: 10pt;
+        color: white;
+        text-align: center;
+    }
+}
