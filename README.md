@@ -1,5 +1,5 @@
 <a href="https://baddi.info" title="Portfolio" target="_blank">
-  <img src="assets/img/screenshot.png" alt="Portfolio" style="width:100%;"/>
+  <img src="https://raw.githubusercontent.com/5baddi/5baddi/assets/img/screenshot.png" alt="Portfolio" style="width:100%;"/>
 </a>
 
 ### 👋 Hi, i'm BADDI Mohamed
