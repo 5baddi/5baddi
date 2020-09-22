@@ -1,9 +1,13 @@
+// Init vars
 $main-color: #4B2D87;
 $second-color: #FFCA28;
 $light-color: #E1BEE7;
+$mq-desktop: 768px;
 
+// Fonts
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@700&family=Source+Sans+Pro&display=swap');
 
+// Style
 html, body{
     height: 100%;
 }
@@ -17,6 +21,7 @@ a{
 }
 body{
     background-color: white;
+    font-family: 'Source Sans Pro', sans-serif;
     
     header{
         display: block;
@@ -69,7 +74,6 @@ body{
             }
 
             p{
-                font-family: 'Source Sans Pro', sans-serif;
                 font-weight: 400;
 
                 a{
@@ -79,11 +83,27 @@ body{
         }
     }
 
-    article{
-        padding: 16px 8px;
+    section{
+        margin: 2rem 0 !important;
+
+        svg{
+            width: 60px;
+            height: auto;
+        }
         
-        #services{
+        .service{
             text-align: center;
+
+            h4{
+                font-size: 14pt;
+                margin: 1rem 0;
+                color: #333;
+            }
+            p{
+                font-size: 11pt;
+                text-align: justify;
+                line-height: 20pt;
+            }
         }
     }
 
@@ -93,5 +113,35 @@ body{
         font-size: 10pt;
         color: white;
         text-align: center;
+    }
+}
+
+// Everything below and including the desktop 
+@media only screen and (max-width : $mq-desktop) {
+    body{
+        header{
+            .hero{
+                h1{
+                    font-size: 20pt;
+                }
+                p{
+                    font-size: 12pt;
+                }
+            }
+        }
+
+        section{
+            .service{
+                margin-bottom: 1.5rem;
+
+                p{
+                    text-align: center;
+                }
+
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
     }
 }
