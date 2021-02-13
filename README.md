@@ -26,12 +26,8 @@ Thus CMS Content Management Systems such as WordPress, PrestaShop, OpenCart.
 
 Languages:
 -
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" title="JavaScript" target="_blank">
-  <img src="https://raw.githubusercontent.com/5baddi/5baddi/master/assets/img/javascript.svg" width="10%"/>
-</a>
-<a href="https://php.net/" title="PHP" target="_blank">
-  <img src="https://raw.githubusercontent.com/5baddi/5baddi/master/assets/img/php.svg" width="10%"/>
-</a>
++ JavaScript
++ PHP
 
 Frameworks: 
 - 
