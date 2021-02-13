@@ -37,7 +37,7 @@ Frameworks:
 + Slim
 + ASP.NET
 + .NET Core
-+ Angular
++ AngularJS
 + VueJS
 
 CMS: 
