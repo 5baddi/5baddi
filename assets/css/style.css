@@ -1,1 +1,143 @@
-@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@700&family=Source+Sans+Pro&display=swap");html,body{height:100%}a{color:#FFCA28 !important}a:hover{text-decoration:none;opacity:.7}body{background-color:white;font-family:'Source Sans Pro', sans-serif}body header{display:block;height:100vh;overflow:hidden}body header .overlay{position:absolute;top:0;left:0;right:0;height:100%;background-image:url("../img/bg.jpg");background-repeat:no-repeat;background-size:cover}body header .overlay:after{content:"";height:100%;width:100%;display:block;background-color:#4B2D87;opacity:.7}body header .hero{display:flex;align-items:center;justify-content:center;text-align:center;height:100%;padding:16px;color:white}body header .hero img{width:200px;height:auto;overflow:hidden;border:9px solid rgba(0,0,0,0.2);margin-bottom:16px}body header .hero h1{font-family:'Chivo', sans-serif;font-weight:bold;text-transform:uppercase;margin-bottom:8px;font-size:32pt}body header .hero p{font-weight:400}body header .hero p a{color:white !important}body section{margin:2rem 0 !important}body section svg{width:60px;height:auto}body section .service{text-align:center}body section .service h4{font-size:14pt;margin:1rem 0;color:#333}body section .service p{font-size:11pt;text-align:justify;line-height:20pt}body footer{padding:15px 0;background-color:#4B2D87;font-size:10pt;color:white;text-align:center}@media only screen and (max-width: 768px){body header .hero h1{font-size:20pt}body header .hero p{font-size:12pt}body section .service{margin-bottom:2rem}body section .service p{text-align:center}body section .service:last-child{margin-bottom:0}}
+@import url("https://fonts.googleapis.com/css2?family=Chivo:wght@700&family=Source+Sans+Pro&display=swap");
+html, body {
+  height: 100%;
+}
+
+a {
+  color: #FFCA28 !important;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: .7;
+}
+
+body {
+  background-color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body header {
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body header .overlay:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-color: #4B2D87;
+  opacity: .7;
+}
+
+body header .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 16px;
+  color: white;
+}
+
+body header .hero img {
+  width: 200px;
+  height: auto;
+  overflow: hidden;
+  border: 9px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
+}
+
+body header .hero h1 {
+  font-family: 'Chivo', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-size: 32pt;
+}
+
+body header .hero p {
+  font-weight: 400;
+}
+
+body header .hero p a {
+  color: white !important;
+}
+
+body section {
+  margin: 2rem 0 !important;
+}
+
+body section svg {
+  width: 60px;
+  height: auto;
+}
+
+body section h2 {
+  margin: 1rem 0 2rem 0;
+  color: #4B2D87;
+  text-transform: uppercase;
+  font-family: 'Chivo', sans-serif;
+}
+
+body section .service {
+  text-align: center;
+}
+
+body section .service h4 {
+  font-size: 14pt;
+  margin: 1rem 0;
+  color: #333;
+}
+
+body section .service p {
+  font-size: 11pt;
+  text-align: justify;
+  line-height: 20pt;
+}
+
+body footer {
+  padding: 15px 0;
+  background-color: #4B2D87;
+  font-size: 10pt;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  body header .hero h1 {
+    font-size: 20pt;
+  }
+  body header .hero p {
+    font-size: 12pt;
+  }
+  body section .service {
+    margin-bottom: 2rem;
+  }
+  body section .service p {
+    text-align: center;
+  }
+  body section .service:last-child {
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
