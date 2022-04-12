@@ -18,7 +18,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-Full-Stack Web Developer, with four years of experience in developing wide range Web applications and performing many enhancement tasks. Specialized in developing Web applications with PHP and C# languages. With great mastery of popular PHP frameworks such as Symfony, Zend Framework, Slim. Thus CMS Content Management Systems such as WordPress, PrestaShop, OpenCart.
+Full-Stack Web Developer, with five years of experience in developing wide range Web applications and performing many enhancement tasks. Specialized in developing Web applications with PHP and C# languages. With great mastery of popular PHP frameworks such as Symfony, Zend Framework, Slim. Thus CMS Content Management Systems such as WordPress, PrestaShop, OpenCart.
 
 Languages:
 -
