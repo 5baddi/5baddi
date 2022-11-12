@@ -25,6 +25,7 @@ Languages:
 + JavaScript
 + PHP
 + C#
++ GO
 
 Frameworks: 
 - 
