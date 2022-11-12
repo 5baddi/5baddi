@@ -29,13 +29,11 @@ Languages:
 
 Frameworks: 
 - 
++ Zend
 + Symfony
 + Laravel
-+ Zend
-+ Slim
 + ASP.NET
 + .NET Core
-+ AngularJS
 + VueJS
 + ReactJS
 
