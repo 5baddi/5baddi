@@ -43,4 +43,4 @@ CMS:
 + PrestaShop
 + OpenCart
 
-Please feel free to contact me: mohamed@baddi.info
+Please feel free to contact me: services@baddi.info
