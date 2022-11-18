@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/5baddi/5baddi/master/assets/img/screenshot.png" alt="Portfolio" style="width:100%;"/>
 </a>
 
-### 👋 Hi, i'm BADDI Mohamed
+### 👋 Hi, I'm BADDI Mohamed
 
 <!--
 **5baddi/5baddi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
