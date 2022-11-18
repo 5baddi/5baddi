@@ -63,10 +63,14 @@ body header .hero h1 {
   font-size: 32pt;
 }
 body header .hero p {
+  font-size: 14pt;
   font-weight: 400;
 }
 body header .hero p a {
   color: white !important;
+}
+body header .hero ul li a {
+  font-size: 14pt;
 }
 body section {
   margin: 2rem 0 !important;
@@ -107,6 +111,9 @@ body footer {
     font-size: 20pt;
   }
   body header .hero p {
+    font-size: 12pt;
+  }
+  body header .hero ul li a {
     font-size: 12pt;
   }
   body section .service {
