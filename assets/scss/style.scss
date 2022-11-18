@@ -59,10 +59,11 @@ body{
 
             img{
                 width: 200px;
-                height: auto;
+                height: 200px;
                 overflow: hidden;
                 border: 9px solid rgba(0, 0, 0, .2);
                 margin-bottom: 16px;
+                object-fit: cover;
             }
 
             h1{
