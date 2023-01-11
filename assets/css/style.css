@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:wght@700&family=Source+Sans+Pro&display=swap");
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -14,6 +15,9 @@ a:hover {
 body {
   background-color: white;
   font-family: "Source Sans Pro", sans-serif;
+}
+body .container {
+  min-height: calc(100vh - 50px);
 }
 body header {
   display: block;
@@ -102,8 +106,7 @@ body section .service p {
   line-height: 20pt;
 }
 body footer {
-  position: absolute;
-  bottom: 0;
+  height: 50px;
   padding: 15px 0;
   background-color: #4B2D87;
   font-size: 10pt;
