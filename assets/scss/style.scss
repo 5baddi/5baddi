@@ -41,7 +41,7 @@ body {
             left: 0;
             right: 0;
             height: 100%;
-            background-image: url('../img/bg.jpg');
+            background-image: url('../img/background.jpg');
             background-repeat: no-repeat;
             background-size: cover;
 
@@ -148,6 +148,8 @@ body {
 @media only screen and (max-width : $mq-desktop) {
     body {
         header {
+            min-height: -webkit-fill-available;
+            
             .hero {
                 h1 {
                     font-size: 20pt;
