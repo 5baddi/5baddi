@@ -115,6 +115,9 @@ body footer {
 }
 
 @media only screen and (max-width: 768px) {
+  body header {
+    min-height: -webkit-fill-available;
+  }
   body header .hero h1 {
     font-size: 20pt;
   }
