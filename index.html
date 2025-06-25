@@ -4,15 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohamed Baddi - Career Timeline</title>
+  <meta name="description" content="Senior PHP Developer and Full Stack Engineer - Mohamed Baddi's professional timeline and portfolio.">
+  <meta property="og:title" content="Mohamed Baddi - Senior PHP Developer">
+  <meta property="og:image" content="/assets/img/screenshot.png">
+  <meta property="og:url" content="https://www.baddi.info">
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fade-in {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-in {
+      animation: fade-in 0.6s ease-out forwards;
+    }
+  </style>
 </head>
 <body class="bg-gradient-to-b from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-100">
   <section class="max-w-5xl mx-auto py-20 px-4">
     <div class="text-center mb-20">
+      <div class="flex flex-col items-center mb-4">
+  <img src="/assets/img/me_2023.jpg" alt="Mohamed Baddi" class="w-20 h-20 rounded-full border-2 border-gray-300 mb-2">
+</div>
       <h1 class="text-4xl font-light italic">Mohamed <span class="not-italic font-bold">BADDI</span></h1>
       <p class="text-lg font-medium mt-2">Senior PHP Developer / Full Stack</p>
       <p class="text-sm text-gray-500 mt-2">A professional journey in web development, DevOps, and software architecture.</p>
       <a href="#" class="inline-block mt-4 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">📄 Télécharger le CV</a>
+    </div>
+
+    <!-- Filter Controls -->
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <select id="filter-tech" class="border rounded px-4 py-2 text-sm">
+        <option value="">📦 Filtrer par technologie</option>
+        <option value="Laravel">Laravel</option>
+        <option value="VueJS">VueJS</option>
+        <option value="Docker">Docker</option>
+        <option value="NodeJS">NodeJS</option>
+        <option value="Golang">Golang</option>
+      </select>
+      <select id="filter-year" class="border rounded px-4 py-2 text-sm">
+        <option value="">📅 Filtrer par année</option>
+        <option value="2022">2022</option>
+        <option value="2021">2021</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+      </select>
+      <button id="reset-filters" class="px-4 py-2 bg-gray-200 rounded text-sm hover:bg-gray-300 transition">🔄 Réinitialiser</button>
     </div>
 
     <div class="flex flex-wrap justify-center gap-2 mb-12">
@@ -28,7 +66,7 @@
       <div class="absolute left-1/2 top-0 w-1 h-full transform -translate-x-1/2 bg-gray-300"></div>
 
       <!-- Gentis Resourcing -->
-      <div class="mb-16 flex justify-start relative">
+      <div class="mb-16 flex justify-start relative" data-year="2022" data-tech="Laravel, Golang, MongoDB, AWS, Docker, Elasticsearch">
         <div class="w-1/2 pr-8 text-left">
           <div class="inline-block bg-white p-6 rounded-lg shadow-lg">
             <p class="text-sm text-gray-500">📅 Mai 2022 – Présent</p>
@@ -48,7 +86,7 @@
       </div>
 
       <!-- YouCan -->
-      <div class="mb-16 flex justify-end relative">
+      <div class="mb-16 flex justify-end relative" data-year="2021" data-tech="Laravel, VueJS, Redis, Docker, Git, Elasticsearch">
         <div class="w-1/2 relative">
           <div class="absolute right-[-11px] top-2 w-6 h-6 bg-white border-4 border-yellow-500 rounded-full z-10"></div>
         </div>
@@ -68,7 +106,7 @@
       </div>
 
       <!-- TCAGENCY -->
-      <div class="mb-16 flex justify-start relative">
+      <div class="mb-16 flex justify-start relative" data-year="2020" data-tech="Laravel, VueJS, ChartJS, Redis, Git">
         <div class="w-1/2 pr-8 text-left">
           <div class="inline-block bg-white p-6 rounded-lg shadow-lg">
             <p class="text-sm text-gray-500">📅 Septembre 2020 – Février 2021</p>
@@ -88,7 +126,7 @@
       </div>
 
       <!-- Neptune Digital -->
-      <div class="mb-16 flex justify-end relative">
+      <div class="mb-16 flex justify-end relative" data-year="2019" data-tech="Laravel, VueJS, FFmpeg, NodeJS, API Sociales">
         <div class="w-1/2 relative">
           <div class="absolute right-[-11px] top-2 w-6 h-6 bg-white border-4 border-green-500 rounded-full z-10"></div>
         </div>
@@ -108,7 +146,7 @@
       </div>
 
       <!-- I2S Ingénierie -->
-      <div class="mb-16 flex justify-start relative">
+      <div class="mb-16 flex justify-start relative" data-year="2018" data-tech="PHP, .NET, SQL Server, Symfony, Google Maps API">
         <div class="w-1/2 pr-8 text-left">
           <div class="inline-block bg-white p-6 rounded-lg shadow-lg">
             <p class="text-sm text-gray-500">📅 Juillet 2018 – Juillet 2019</p>
@@ -167,5 +205,58 @@
       </div>
     </div>
   </footer>
+
+  <!-- Scripts -->
+  <script>
+    const techFilter = document.getElementById("filter-tech");
+    const yearFilter = document.getElementById("filter-year");
+    const resetFilters = document.getElementById("reset-filters");
+    const entries = document.querySelectorAll("[data-tech][data-year]");
+
+    function filterEntries() {
+      const tech = techFilter.value;
+      const year = yearFilter.value;
+
+      entries.forEach(entry => {
+        const matchesTech = !tech || entry.dataset.tech.includes(tech);
+        const matchesYear = !year || entry.dataset.year.includes(year);
+
+        if (matchesTech && matchesYear) {
+          entry.style.display = "flex";
+          entry.classList.remove("opacity-0", "scale-95");
+          entry.classList.add("opacity-100", "scale-100");
+        } else {
+          entry.classList.remove("opacity-100", "scale-100");
+          entry.classList.add("opacity-0", "scale-95");
+        
+          setTimeout(() => entry.style.display = "none", 300);
+        }
+      });
+    }
+
+    techFilter.addEventListener("change", filterEntries);
+    yearFilter.addEventListener("change", filterEntries);
+
+    resetFilters.addEventListener("click", () => {
+      techFilter.value = "";
+      yearFilter.value = "";
+
+      entries.forEach(entry => {
+        entry.style.display = "flex";
+        entry.classList.remove("opacity-0", "scale-95");
+        entry.classList.add("opacity-100", "scale-100");
+      });
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fade-in");
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll(".animate-fade").forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>
